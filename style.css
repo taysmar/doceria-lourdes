@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+
+/*font-family: 'Pacifico', cursive;
+font-family: 'Quicksand', sans-serif; */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .header-container{
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        margin: 0 15px 0 15px;
+    }
+    #logo-img{
+        width: 160px;
+        height: 99px;
+    }
+    .header-menu{
+        display: none;
+    }
+    
+    .hero-description, .hero-title{
+        display: none;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .hero-profile-container{
+        display: flex;
+        margin: 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+        #cake-img {
+        width: 360px;
+    }
+    #profile-pic{
+        width: 70px;
+        border-radius: 50px;
+        margin-right: 15px;
+    }
+
+    #comment{
+        width: 200px;
+        margin-left: 15px;
+    }
+
+    #hero-order {
+        width: 200px;
+        height: 60px;
+        background-color: #FF6665;
+        border-radius: 5px;
+        font-size: 26px;
+        border-style: none;
+        margin: 10px 0 0 20px;
+    }
+
+    .footer-logo-img{
+        width: 280px;
+    }
+}
