@@ -6,7 +6,9 @@ font-family: 'Quicksand', sans-serif; */
 * {
     font-family: 'Quicksand', sans-serif;
     background-color: #F9F5F0;
+    margin: 0;
 }
+
 
 @media screen and (max-width: 500px) {
     p {
@@ -324,6 +326,27 @@ font-family: 'Quicksand', sans-serif; */
     }
     .footer-text{
         width: 50%;
+    }
+    .return{
+        background-color: #FF6665;
+        border-style: none;
+        background-color: #FF6665;
+    }
+    #return-button {
+        background-color: #FF6665;
+        border-color: #FF6665;
+        border-style: hidden;
+        height: 30px;
+
+    }
+    .return i {
+        align-items: center;
+        margin-left: 10px;
+        color: #F9F5F0  ;
+    }
+    #pedido{
+        columns: 2;
+        margin: 30px;
     }
 }
 @media screen and (min-width: 1401px) and (max-width: 2559px) {
