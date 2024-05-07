@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="shopping-page.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Carrinho de compras</title>
@@ -11,9 +12,11 @@
 <body>
     <section id="header">
         <div class="header-container">
-            <div class="hader-logo">
-                <img id="logo-img" src="./src/logo.svg" alt="Logomarca">
-            </div>
+            <a href="./index.html">
+                <div class="hader-logo">
+                    <img id="logo-img" src="./src/logo.svg" alt="Logomarca">
+                </div>
+            </a>
             <div class="header-menu">
                 <a href=#hero id="home">home</a>
                 <a href=#delivery-field id="delivery">delivery</a>
@@ -27,14 +30,57 @@
     <section>
         <div class="return">
             
-            <button id="return-button"><i class="fa fa-long-arrow-left"></i></button> </div>
+            <a href="./index.html">
+
+                <button id="return-button"><i class="fa fa-long-arrow-left"></i></button> </div>
+            </a>
     </section>
 
     <section id="pedido">
-        <div class="itens"></div>
-        <div class="resumo"></div>
+        <div class="itens">
+            <div class="item-container">
+                <img id="item-img" src="./src/cupcake.png" alt="">
+                <div id="item-text">
+                    <p>Nome: </p>
+                    <p>Quantidade: </p>
+                </div>
+            </div>
+            <div class="item-container">
+                <img id="item-img" src="./src/cupcake.png"  alt="">
+                <div id="item-text">
+                    <p>Nome: </p>
+                    <p>Quantidade: </p>
+                </div>
+            </div>
+            <div class="item-container">
+                <img id="item-img" src="./src/cupcake.png"  alt="">
+                <div id="item-text">
+                    <p>Nome: </p>
+                    <p>Quantidade: </p>
+                </div>
+            </div>
+        </div>
+        <div class="resumo">
+            <p>Resumo do Pedido</p>
+            <p>Quantidade</p>
+            <p>Preço</p>
+            <p>Frete</p>
+            <img src="./src/Line 6.svg" alt="">
+        <p>Total</p>
+            <div class="resumo-buttons">
+                <button id="mais-produtos-b">Adicionar mais produtos</button>
+                <button id="continuar-b">Continuar</button>
+            </div>
+
+        </div>
     </section>
-    <section></section>
+    
+    <div class="calcule-frete">
+        <p id="frete-t">Frete a consultar!</p>
+    </div>
+    <section>
+
+    </section>
     
 </body>
 </html>
