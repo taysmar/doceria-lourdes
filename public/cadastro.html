@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header-container">
+            <a href="./index.html"><div class="hader-logo">
+                <img id="logo-img" src="./src/logo.svg" alt="Logomarca">
+            </div></a>
+            <div class="header-menu">
+                <a href=#hero id="home">home</a>
+                <a href=#delivery-field id="delivery">delivery</a>
+                <a href=#contact-field id="contato">contato</a>
+                <a href="./cadastro.html">Perfil</a>
+            </div>
+            <div class="shopping-bag">
+                <a href="./shopping-page.html" id="img-shopping-bag"><img src="./src/ShoppingOutlined.png"></a>
+            </div>
+        </section>
+    <div class="forms">
+        <div class="cadastro-container">
+                  <h1>Criar conta</h1>
+            <form id="cadastroForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+                <br>
+                <label for="telefone">Senha:</label>
+                <input type="text" id="senha" name="senha" required>
+                <br>
+                <label for=""></label>
+                <button type="submit" class="cadastrar-b">Cadastrar</button>
+            </form>
+           </div>
+        <div class="login-container">   
+            <h1>Já tem uma conta?</h1>
+            <form id="loginForm">
+                <label for="Email">Email:</label>
+                <input type="text" id="loginEmail" name="loginEmail" required>
+                <br>
+                <label for="Senha">Senha:</label>
+                <input type="text" id="loginSenha" name="loginSenha" required>
+                <br>
+                <button type="submit"class="login-b">Entrar</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+   
+
+    
+</body>
+</html>
