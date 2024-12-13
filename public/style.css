@@ -237,7 +237,7 @@ body{
         width: 240px;
         height: 140px;
     }
-    #home, #delivery, #contato  {
+    #home, #delivery, #contato, #perfil{
         font-family: 'Pacifico', cursive;
         text-decoration: none;
         color: #93562A;
