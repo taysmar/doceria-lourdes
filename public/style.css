@@ -12,6 +12,7 @@ body{
     background-color: #F9F5F0;
 }
 
+
 @media screen and (max-width: 500px) {
     p {
         font-size: 14px;
@@ -231,7 +232,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 0 10px 20px;
+        padding: 0 10px 20px;
     }
     #logo-img{
         width: 240px;
@@ -362,7 +363,7 @@ body{
         width: 240px;
         height: 150px;
     }
-    #home, #delivery, #contato  {
+    #home, #delivery, #contato, #perfil {
         font-family: 'Pacifico', cursive;
         text-decoration: none;
         color: #93562A;
@@ -466,7 +467,7 @@ body{
         width: 600px;
         height: 300px;
     }
-    #home, #delivery, #contato  {
+    #home, #delivery, #contato, #perfil {
         font-family: 'Pacifico', cursive;
         text-decoration: none;
         color: #93562A;
@@ -559,5 +560,8 @@ body{
     }
     .footer-text{
         width: 50%;
+    }
+    .shopping-bag img{
+        width: 50px;
     }
 }

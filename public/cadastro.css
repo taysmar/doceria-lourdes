@@ -17,6 +17,7 @@ input {
 #cadastroForm{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .cadastrar-b{
@@ -31,4 +32,113 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+@media screen and (min-width: 1021px) and (max-width: 1400px) { 
+    .forms {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cadastro-container, .login-container {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+       
+    }
+    .cadastro-container h1, .login-container h1 {
+        font-size: 16px;
+    }
+    input {
+        width: 250px;
+    }
+    .login-b, .cadastrar-b {
+        height: 30px;
+        width: 80px;
+        border-radius: 2.5px;
+        font-weight: bolder;
+    }
+}
+@media screen and (max-width: 1020px){ 
+    .header-container {
+        height: fit-content;
+    }
+    .forms {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cadastro-container, .login-container {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+       
+    }
+    .cadastro-container h1, .login-container h1 {
+        font-size: 16px;
+    }
+    input {
+        width: 270px;
+    }
+    .login-b, .cadastrar-b {
+        height: 30px;
+        width: 80px;
+        border-radius: 2.5px;
+        font-weight: bolder;
+    }
+
+}
+@media screen and (min-width: 1401px) and (max-width: 2000px) { 
+    .forms {
+        margin-top: 160px;
+    }
+    .forms input{
+        margin-top: 10px;
+        height: 25px;
+    }
+    .login-b, .cadastrar-b {
+        height: 40px;
+        width: 100px;
+        border-radius: 3px;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width: 2001px) { 
+    .forms {
+        display: flex;
+        margin-top: 280px;
+        font-size: larger;
+        justify-content: center;
+
+    }
+    input{
+        height: 50px;
+        width: 500px;
+        padding: 5px;
+    }
+    .login-b, .cadastrar-b {
+        height: 60px;
+        width: 180px;
+        border-radius: 4px;
+        font-weight: bolder;
+        font-size: 26px;
+    }
+    .cadastro-container, .login-container{
+        width: auto;
+    }
+    .login-container h1{
+        text-align: center;
+    }
+    label{
+        font-size: 25px;
+    }
+
 }
