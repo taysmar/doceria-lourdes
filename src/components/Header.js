@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logo.svg"
 import SacolaCompras from "../assets/images/ShoppingOutlined.png"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -16,9 +17,9 @@ const Header = () => {
           <a href="./cadastro.html" id="perfil">perfil</a>
         </div>
         <div className="shopping-bag">
-          <a href="./shopping-page.html" id="img-shopping-bag">
+          <Link to="/Shopping" id="img-shopping-bag">
             <img src={SacolaCompras} alt="Sacola de compras" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

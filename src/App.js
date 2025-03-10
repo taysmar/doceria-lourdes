@@ -1,21 +1,19 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Gallery from "./components/Gallery";
-import Delivery from "./components/Delivery";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Cadastro from './pages/Cadastro';
+import Shopping from './pages/Shopping';
+import './App.css'
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <Gallery />
-      <Delivery />
-      <Contact />
-      <Footer />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Cadastro" element={<Cadastro />} />
+        <Route path="Shopping" element={<Shopping />} />
+
+      </Routes>
     </div>
   );
 };
