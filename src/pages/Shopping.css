@@ -1,0 +1,12 @@
+.divider-container{
+    background-color: #FF6665;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 20px 0 20px 0;
+}
+.arrow-back{
+    margin-left: 40px;
+    stroke: #fff;
+
+}
