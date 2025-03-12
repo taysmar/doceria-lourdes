@@ -1,6 +1,7 @@
 import React from "react";
 import Divisor from "../assets/images/divisor.png"
 import Bolo from "../assets/images/cake-img.svg"
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,9 +17,10 @@ const Hero = () => {
         </p>
       </div>
       <div className="hero-button">
-        <a href="./shopping-page.html">
+        <Link to="./Shopping">
           <button id="hero-order">Peça agora  </button>
-        </a>
+        </Link>
+        
       </div>
       <div className="hero-profile-container">
         <div className="profile-pic">

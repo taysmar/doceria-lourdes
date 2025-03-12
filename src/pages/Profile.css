@@ -1,0 +1,94 @@
+.container{
+    background-color: #FFF;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 40px;
+  }
+  .divider-container{
+    background-color: #FF6665;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 20px 0 20px 0;
+}
+.arrow-back{
+    margin-left: 40px;
+    stroke: #fff;
+}
+  .profile-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ffb6c1;
+    width: 100%;
+    max-width: 400px;
+
+  }
+  
+  .profile-title {
+    font-size: 24px;
+    color: #c94c4c;
+    font-weight: bold;
+  }
+  
+  .profile-content {
+    margin-top: 20px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .profile-name {
+    font-size: 20px;
+    color: #c94c4c;
+    margin-top: 10px;
+  }
+  
+  .profile-info {
+    color: gray;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .edit-section {
+    margin-top: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+  }
+  
+  .save-button, .edit-button {
+    background: #c94c4c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .save-button:hover, .edit-button:hover {
+    background: #b33a3a;
+  }
+  
+  .edit-icon {
+    margin-right: 5px;
+  }
+  

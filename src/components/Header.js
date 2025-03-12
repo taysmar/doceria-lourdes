@@ -14,7 +14,7 @@ const Header = () => {
           <a href="#hero" id="home">home</a>
           <a href="#delivery-field" id="delivery">delivery</a>
           <a href="#contact-field" id="contato">contato</a>
-          <a href="./cadastro.html" id="perfil">perfil</a>
+          <Link to="/Profile" id="perfil">perfil</Link>
         </div>
         <div className="shopping-bag">
           <Link to="/Shopping" id="img-shopping-bag">
