@@ -300,7 +300,7 @@ body{
         width: 240px;
         height: 140px;
     }
-    #home, #delivery, #contato, #perfil{
+    #home, #delivery, #contato, #perfil, #admin{
         font-family: 'Pacifico', cursive;
         text-decoration: none;
         color: #93562A;
@@ -438,7 +438,7 @@ body{
         width: 240px;
         height: 150px;
     }
-    #home, #delivery, #contato, #perfil {
+    #home, #delivery, #contato, #perfil, #admin {
         font-family: 'Pacifico', cursive;
         text-decoration: none;
         color: #93562A;
@@ -556,7 +556,7 @@ body{
         width: 600px;
         height: 300px;
     }
-    #home, #delivery, #contato, #perfil {
+    #home, #delivery, #contato, #perfil, #admin {
         font-family: 'Pacifico', cursive;
         text-decoration: none;
         color: #93562A;

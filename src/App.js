@@ -3,8 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Cadastro from './pages/Cadastro';
 import Shopping from './pages/Shopping';
-import UserProfile from './pages/Profile'
+import UserProfile from './pages/Profile';
+import LoginPage from "./pages/Login";
 import './App.css'
+import AdminPage from "./pages/ProdutosAdmi";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Route path="Cadastro" element={<Cadastro />} />
         <Route path="Profile" element={<UserProfile />} />
         <Route path="Shopping" element={<Shopping />} />
+        <Route path="Login" element={<LoginPage />} />
+        <Route path="Admin" element={<AdminPage />} />
 
       </Routes>
     </div>
