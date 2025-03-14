@@ -69,7 +69,7 @@ export default function AdminPage() {
         return
       }
 
-      const imageUrl = `${supabase.storage.from("products").getPublicUrl(fileName).data.publicUrl}`
+      const imageUrl = `${supabase.storage.from("products-img").getPublicUrl(fileName).data.publicUrl}`
       const { error: insertError } = await supabase
         .from("products")
         .insert([{ name: product.name, description: product.description, price: product.price, image_url: imageUrl }])

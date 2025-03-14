@@ -7,6 +7,7 @@ import UserProfile from './pages/Profile';
 import LoginPage from "./pages/Login";
 import './App.css'
 import AdminPage from "./pages/ProdutosAdmi";
+import SmallShop from "./pages/SmallShop";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="Shopping" element={<Shopping />} />
         <Route path="Login" element={<LoginPage />} />
         <Route path="Admin" element={<AdminPage />} />
+        <Route path="Lojinha" element={<SmallShop />} />
 
       </Routes>
     </div>
