@@ -16,21 +16,22 @@ const Header = () => {
         data: { user: supabaseUser },
         error,
       } = await supabase.auth.getUser();
-
+  
       if (error) {
         console.error("Erro ao obter usuário:", error);
         return;
       }
-
+  
       setUser(supabaseUser.email);
+  
       if (supabaseUser.email === ADMIN_EMAIL) {
-        console.log(user)
         setIsAdmin(true);
       }
     }
-
+  
     fetchUser();
-  }, []);
+  }, []); // ✅ agora o ESLint para de reclamar
+  
 
   return (
     <section id="header">
