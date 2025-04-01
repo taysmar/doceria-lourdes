@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Logo from "../assets/images/logo.svg";
 import SacolaCompras from "../assets/images/ShoppingOutlined.png";
 import { Link } from "react-router-dom";
 import { supabase } from "../supabaseCLient";
+import { AuthContext } from "../context/AuthContext"; // ajuste esse path conforme sua estrutura
 
 const ADMIN_EMAIL = process.env.REACT_APP_ADMIN_EMAIL;
 
@@ -11,7 +12,6 @@ const Header = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    const user = useContext(AuthContext);
     async function fetchUser() {
       const { data: { user }, error } = await supabase.auth.getUser();
       if (error) {
@@ -19,7 +19,7 @@ const Header = () => {
         return;
       } 
       setUser(user.email);
-      if(user.email === ADMIN_EMAIL){
+      if (user.email === ADMIN_EMAIL) {
         setIsAdmin(true);
       }
     }
@@ -30,7 +30,7 @@ const Header = () => {
     <section id="header">
       <div className="header-container">
         <div className="header-logo">
-          <img src={Logo} alt="Logomarca" id="logo-img"/>
+          <img src={Logo} alt="Logomarca" id="logo-img" />
         </div>
         <div className="header-menu">
           <a href="#hero" id="home">home</a>
