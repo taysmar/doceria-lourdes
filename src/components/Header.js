@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/images/logo.svg";
 import SacolaCompras from "../assets/images/ShoppingOutlined.png";
 import { Link } from "react-router-dom";
@@ -12,6 +12,7 @@ const Header = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
+    console.log(user)
     async function fetchUser() {
       const { data: { user }, error } = await supabase.auth.getUser();
       if (error) {

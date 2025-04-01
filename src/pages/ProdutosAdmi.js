@@ -61,7 +61,7 @@ export default function AdminPage() {
     setSuccessMessage("")
     try {
       const fileName = `${Date.now()}-${image.name}`
-      const { data, error } = await supabase.storage.from("products-img").upload(fileName, image)
+      const { error } = await supabase.storage.from("products-img").upload(fileName, image)
 
       if (error) {
         console.error("Erro ao fazer upload da imagem:", error)
