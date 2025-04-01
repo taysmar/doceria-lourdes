@@ -59,7 +59,6 @@ export default function AdminPage() {
     }
     setIsLoading(true)
     setSuccessMessage("")
-    const data = await fetchData();
     try {
       const fileName = `${Date.now()}-${image.name}`
       const { data, error } = await supabase.storage.from("products-img").upload(fileName, image)

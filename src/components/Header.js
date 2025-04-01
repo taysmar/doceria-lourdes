@@ -3,7 +3,7 @@ import Logo from "../assets/images/logo.svg";
 import SacolaCompras from "../assets/images/ShoppingOutlined.png";
 import { Link } from "react-router-dom";
 import { supabase } from "../supabaseCLient";
-import { AuthContext } from "../context/AuthContext"; // ajuste esse path conforme sua estrutura
+
 
 const ADMIN_EMAIL = process.env.REACT_APP_ADMIN_EMAIL;
 
