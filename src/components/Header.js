@@ -4,7 +4,6 @@ import SacolaCompras from "../assets/images/ShoppingOutlined.png";
 import { Link } from "react-router-dom";
 import { supabase } from "../supabaseCLient";
 
-
 const ADMIN_EMAIL = process.env.REACT_APP_ADMIN_EMAIL;
 
 const Header = () => {
@@ -12,18 +11,24 @@ const Header = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    console.log(user)
     async function fetchUser() {
-      const { data: { user }, error } = await supabase.auth.getUser();
+      const {
+        data: { user: supabaseUser },
+        error,
+      } = await supabase.auth.getUser();
+
       if (error) {
         console.error("Erro ao obter usuário:", error);
         return;
-      } 
-      setUser(user.email);
-      if (user.email === ADMIN_EMAIL) {
+      }
+
+      setUser(supabaseUser.email);
+      if (supabaseUser.email === ADMIN_EMAIL) {
+        console.log(user)
         setIsAdmin(true);
       }
     }
+
     fetchUser();
   }, []);
 
