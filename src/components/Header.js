@@ -25,6 +25,7 @@ const Header = () => {
       setUser(supabaseUser.email);
   
       if (supabaseUser.email === ADMIN_EMAIL) {
+        console.log(user)
         setIsAdmin(true);
       }
     }
