@@ -7,7 +7,6 @@ import { supabase } from "../supabaseCLient";
 const ADMIN_EMAIL = process.env.REACT_APP_ADMIN_EMAIL;
 
 const Header = () => {
-  const [user, setUser] = useState(null);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
@@ -16,23 +15,19 @@ const Header = () => {
         data: { user: supabaseUser },
         error,
       } = await supabase.auth.getUser();
-  
+
       if (error) {
         console.error("Erro ao obter usuário:", error);
         return;
       }
-  
-      setUser(supabaseUser.email);
-  
-      if (supabaseUser.email === ADMIN_EMAIL) {
-        console.log(user)
+
+      if (supabaseUser?.email === ADMIN_EMAIL) {
         setIsAdmin(true);
       }
     }
-  
+
     fetchUser();
-  }, []); // ✅ agora o ESLint para de reclamar
-  
+  }, []); // ✅ sem dependência de `user`
 
   return (
     <section id="header">
