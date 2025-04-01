@@ -11,6 +11,7 @@ const Header = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
+    const user = useContext(AuthContext);
     async function fetchUser() {
       const { data: { user }, error } = await supabase.auth.getUser();
       if (error) {
